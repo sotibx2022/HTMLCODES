@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Codes Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    color: #333;
+}
+
+
+</style>
+<body>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Status Code</th>
+                <th>Message</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>200</td>
+                <td>OK</td>
+                <td>The request has succeeded.</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Created</td>
+                <td>The request has succeeded, and a new resource has been created.</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>No Content</td>
+                <td>The request was successful, but there is no content to return.</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Bad Request</td>
+                <td>The request was invalid or cannot be processed due to client-side errors.</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>Unauthorized</td>
+                <td>Authentication is required and has failed or has not been provided.</td>
+            </tr>
+            <tr>
+                <td>403</td>
+                <td>Forbidden</td>
+                <td>The client does not have access rights to the content.</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>Not Found</td>
+                <td>The requested resource could not be found.</td>
+            </tr>
+            <tr>
+                <td>409</td>
+                <td>Conflict</td>
+                <td>The request conflicts with the current state of the server.</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>Internal Server Error</td>
+                <td>A generic server error occurred.</td>
+            </tr>
+            <tr>
+                <td>503</td>
+                <td>Service Unavailable</td>
+                <td>The server is not ready to handle the request, often due to maintenance.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
